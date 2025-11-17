@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Wheatbelt Ag Precision | Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-900">
+  <!-- NAVBAR -->
+  <header class="bg-white border-b sticky top-0 z-20">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2 font-semibold">
+        <span class="inline-block rounded-full bg-emerald-600 w-6 h-6"></span>
+        <span>Wheatbelt Ag Precision</span>
+      </a>
+      <nav class="hidden md:flex gap-6 text-sm text-slate-700">
+        <a href="index.html" class="font-semibold text-emerald-700">Home</a>
+        <a href="about.html" class="hover:text-slate-900">About</a>
+        <a href="services.html" class="hover:text-slate-900">Services</a>
+        <a href="contact.html" class="hover:text-slate-900">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <section class="max-w-6xl mx-auto px-4 pt-12 pb-10 md:pt-20 md:pb-16">
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">
+            Localised Precision Ag for the
+            <span class="text-emerald-600">Wheatbelt</span>
+          </h1>
+          <p class="mt-4 text-lg text-slate-600">
+            Wheatbelt Ag Precision provides localised Precision Ag services including repair, IT,
+            security, sales and mapping for growers across the central Wheatbelt.
+          </p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href="contact.html" class="inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-emerald-600 text-white text-sm font-semibold hover:bg-emerald-700">
+              Book a consult
+            </a>
+            <a href="services.html" class="inline-flex items-center justify-center px-5 py-2.5 rounded-full border border-slate-300 text-sm font-semibold hover:bg-white">
+              View services
+            </a>
+          </div>
+          <div class="mt-6 grid grid-cols-2 gap-4 text-sm text-slate-700">
+            <div class="bg-white rounded-2xl border p-3">
+              <div class="font-semibold">Local support</div>
+              <p class="text-slate-600 mt-1">Based in Merredin, working across the Wheatbelt.</p>
+            </div>
+            <div class="bg-white rounded-2xl border p-3">
+              <div class="font-semibold">Practical outcomes</div>
+              <p class="text-slate-600 mt-1">Maps, systems and setups that fit your machinery.</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="bg-white rounded-3xl border shadow-sm p-5">
+            <h2 class="font-semibold text-lg mb-2">What we help with</h2>
+            <ul class="text-sm text-slate-700 space-y-1.5">
+              <li>• Paddock mapping & management zones</li>
+              <li>• Variable-rate prescriptions (lime, fert, seed)</li>
+              <li>• IT, networking & camera security on-farm</li>
+              <li>• Hardware sales, setup & support</li>
+              <li>• Imagery, monitoring & reporting</li>
+            </ul>
+            <div class="mt-4 text-xs text-slate-500">
+              17 Bates Street, Merredin, WA, Australia, Western Australia
+            </div>
+            <div class="mt-1 text-xs text-slate-500">
+              Phone: +61 411 179 540 · Email:
+              <a href="mailto:Admin@WheatbeltPrecisionAg.com.au" class="underline">
+                Admin@WheatbeltPrecisionAg.com.au
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUICK HIGHLIGHTS -->
+    <section class="bg-white border-t">
+      <div class="max-w-6xl mx-auto px-4 py-10 grid md:grid-cols-3 gap-6 text-sm">
+        <div>
+          <h3 class="font-semibold text-slate-900 mb-1">Precision hardware & repair</h3>
+          <p class="text-slate-600">
+            From controllers and monitors to sensors and comms, we help keep your precision gear
+            online and calibrated.
+          </p>
+        </div>
+        <div>
+          <h3 class="font-semibold text-slate-900 mb-1">IT & security on-farm</h3>
+          <p class="text-slate-600">
+            Networking, cameras and secure remote access between house, office, sheds and paddock.
+          </p>
+        </div>
+        <div>
+          <h3 class="font-semibold text-slate-900 mb-1">Mapping & data</h3>
+          <p class="text-slate-600">
+            Paddock mapping, zoning and simple reporting that turns data into clear decisions each
+            season.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t bg-white mt-10">
+    <div class="max-w-6xl mx-auto px-4 py-6 flex flex-col md:flex-row items-center justify-between gap-3 text-sm text-slate-600">
+      <div class="font-semibold text-slate-800">Wheatbelt Ag Precision</div>
+      <div class="text-xs text-center md:text-right">
+        <div>17 Bates Street, Merredin, WA, Australia, Western Australia</div>
+        <div>© <span id="year"></span> Wheatbelt Ag Precision. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

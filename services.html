@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Services | Wheatbelt Ag Precision</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-900">
+  <!-- NAVBAR -->
+  <header class="bg-white border-b sticky top-0 z-20">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2 font-semibold">
+        <span class="inline-block rounded-full bg-emerald-600 w-6 h-6"></span>
+        <span>Wheatbelt Ag Precision</span>
+      </a>
+      <nav class="hidden md:flex gap-6 text-sm text-slate-700">
+        <a href="index.html" class="hover:text-slate-900">Home</a>
+        <a href="about.html" class="hover:text-slate-900">About</a>
+        <a href="services.html" class="font-semibold text-emerald-700">Services</a>
+        <a href="contact.html" class="hover:text-slate-900">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-4 pt-12 pb-16">
+    <h1 class="text-3xl md:text-4xl font-bold mb-4">Services</h1>
+    <p class="text-slate-600 max-w-3xl mb-8">
+      We offer a mix of precision agriculture, on-farm IT and security services. Choose a single
+      paddock project, or work with us across the whole farm over multiple seasons.
+    </p>
+
+    <div class="grid md:grid-cols-3 gap-6 text-sm">
+      <div class="bg-white rounded-2xl border p-5">
+        <h2 class="font-semibold text-lg mb-2">Mapping & Zoning</h2>
+        <ul class="space-y-1.5 text-slate-700">
+          <li>• Paddock boundary mapping</li>
+          <li>• Management zones from yield, soil & imagery</li>
+          <li>• Simple, clear PDF and digital map outputs</li>
+        </ul>
+      </div>
+
+      <div class="bg-white rounded-2xl border p-5">
+        <h2 class="font-semibold text-lg mb-2">Variable-Rate Planning</h2>
+        <ul class="space-y-1.5 text-slate-700">
+          <li>• Variable-rate lime, fertiliser and seed plans</li>
+          <li>• Prescription files matched to your controllers</li>
+          <li>• Trial strips and side-by-side comparisons</li>
+        </ul>
+      </div>
+
+      <div class="bg-white rounded-2xl border p-5">
+        <h2 class="font-semibold text-lg mb-2">Hardware Sales & Setup</h2>
+        <ul class="space-y-1.5 text-slate-700">
+          <li>• Precision ag hardware sales & sourcing</li>
+          <li>• Installation, setup and calibration support</li>
+          <li>• Pre-season checks and in-season troubleshooting</li>
+        </ul>
+      </div>
+
+      <div class="bg-white rounded-2xl border p-5">
+        <h2 class="font-semibold text-lg mb-2">IT & Networking</h2>
+        <ul class="space-y-1.5 text-slate-700">
+          <li>• Office, house and shed networking</li>
+          <li>• Remote access to key systems where appropriate</li>
+          <li>• Data backup and basic IT support</li>
+        </ul>
+      </div>
+
+      <div class="bg-white rounded-2xl border p-5">
+        <h2 class="font-semibold text-lg mb-2">Security & Cameras</h2>
+        <ul class="space-y-1.5 text-slate-700">
+          <li>• On-farm camera and security setups</li>
+          <li>• Monitoring key sites like sheds and fuel points</li>
+          <li>• Simple apps and access for the team</li>
+        </ul>
+      </div>
+
+      <div class="bg-white rounded-2xl border p-5">
+        <h2 class="font-semibold text-lg mb-2">Seasonal Support</h2>
+        <ul class="space-y-1.5 text-slate-700">
+          <li>• Pre-season planning sessions</li>
+          <li>• In-season call-out & phone support</li>
+          <li>• Post-harvest map and performance review</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mt-10 bg-emerald-50 border border-emerald-100 rounded-2xl p-5 flex flex-col md:flex-row items-start md:items-center justify-between gap-3 text-sm">
+      <div>
+        <div class="font-semibold text-emerald-900 mb-1">
+          Not sure where to start?
+        </div>
+        <p class="text-emerald-900">
+          We can start with a single paddock or one problem area and build from there.
+        </p>
+      </div>
+      <a href="contact.html" class="inline-flex items-center justify-center px-4 py-2 rounded-full bg-emerald-600 text-white font-semibold text-xs hover:bg-emerald-700">
+        Request a call
+      </a>
+    </div>
+  </main>
+
+  <footer class="border-t bg-white">
+    <div class="max-w-6xl mx-auto px-4 py-6 flex flex-col md:flex-row items-center justify-between gap-3 text-sm text-slate-600">
+      <div class="font-semibold text-slate-800">Wheatbelt Ag Precision</div>
+      <div class="text-xs text-center md:text-right">
+        <div>© <span id="year"></span> Wheatbelt Ag Precision. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

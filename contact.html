@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact | Wheatbelt Ag Precision</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-900">
+  <!-- NAVBAR -->
+  <header class="bg-white border-b sticky top-0 z-20">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2 font-semibold">
+        <span class="inline-block rounded-full bg-emerald-600 w-6 h-6"></span>
+        <span>Wheatbelt Ag Precision</span>
+      </a>
+      <nav class="hidden md:flex gap-6 text-sm text-slate-700">
+        <a href="index.html" class="hover:text-slate-900">Home</a>
+        <a href="about.html" class="hover:text-slate-900">About</a>
+        <a href="services.html" class="hover:text-slate-900">Services</a>
+        <a href="contact.html" class="font-semibold text-emerald-700">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-4 pt-12 pb-16">
+    <h1 class="text-3xl md:text-4xl font-bold mb-4">Contact</h1>
+    <p class="text-slate-600 max-w-3xl mb-8">
+      Tell us a bit about your farm, the gear you’re running and where you think the biggest
+      opportunity is. We’ll be in touch to talk through a practical plan.
+    </p>
+
+    <div class="grid md:grid-cols-2 gap-10 items-start">
+      <div class="space-y-4 text-sm text-slate-700">
+        <h2 class="text-lg font-semibold">Details</h2>
+        <p>
+          <strong>Address:</strong><br />
+          17 Bates Street<br />
+          Merredin, WA, Australia, Western Australia
+        </p>
+        <p>
+          <strong>Phone:</strong><br />
+          +61 411 179 540
+        </p>
+        <p>
+          <strong>Email:</strong><br />
+          <a href="mailto:Admin@WheatbeltPrecisionAg.com.au" class="underline">
+            Admin@WheatbeltPrecisionAg.com.au
+          </a>
+        </p>
+        <p class="text-xs text-slate-500">
+          If you prefer, you can call or email directly. The form is a simple way to send through
+          your details.
+        </p>
+      </div>
+
+      <div class="bg-white border rounded-2xl p-5">
+        <h2 class="text-lg font-semibold mb-3">Send a message</h2>
+        <!-- Simple JS form: shows an alert instead of actually sending -->
+        <form
+          class="space-y-3 text-sm"
+          onsubmit="alert('Thanks for your message! In a live site this form would be connected to an email service.'); return false;"
+        >
+          <div>
+            <label class="block mb-1 text-slate-700">Name</label>
+            <input
+              type="text"
+              required
+              class="w-full border rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500"
+            />
+          </div>
+          <div>
+            <label class="block mb-1 text-slate-700">Email</label>
+            <input
+              type="email"
+              required
+              class="w-full border rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500"
+            />
+          </div>
+          <div>
+            <label class="block mb-1 text-slate-700">Message</label>
+            <textarea
+              rows="4"
+              class="w-full border rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500"
+              placeholder="What crops? What area? What are you hoping to improve?"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="w-full inline-flex items-center justify-center px-4 py-2.5 rounded-full bg-emerald-600 text-white font-semibold text-sm hover:bg-emerald-700"
+          >
+            Send
+          </button>
+          <p class="text-xs text-slate-500 mt-1">
+            For a production site you can link this form to Formspree, Netlify Forms, or a custom
+            email handler.
+          </p>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="border-t bg-white">
+    <div class="max-w-6xl mx-auto px-4 py-6 flex flex-col md:flex-row items-center justify-between gap-3 text-sm text-slate-600">
+      <div class="font-semibold text-slate-800">Wheatbelt Ag Precision</div>
+      <div class="text-xs text-center md:text-right">
+        <div>© <span id="year"></span> Wheatbelt Ag Precision. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

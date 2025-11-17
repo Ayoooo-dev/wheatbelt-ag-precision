@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>About | Wheatbelt Ag Precision</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-900">
+  <!-- NAVBAR -->
+  <header class="bg-white border-b sticky top-0 z-20">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2 font-semibold">
+        <span class="inline-block rounded-full bg-emerald-600 w-6 h-6"></span>
+        <span>Wheatbelt Ag Precision</span>
+      </a>
+      <nav class="hidden md:flex gap-6 text-sm text-slate-700">
+        <a href="index.html" class="hover:text-slate-900">Home</a>
+        <a href="about.html" class="font-semibold text-emerald-700">About</a>
+        <a href="services.html" class="hover:text-slate-900">Services</a>
+        <a href="contact.html" class="hover:text-slate-900">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-4 pt-12 pb-16">
+    <h1 class="text-3xl md:text-4xl font-bold mb-4">About Wheatbelt Ag Precision</h1>
+    <p class="text-slate-600 max-w-3xl mb-6">
+      Wheatbelt Ag Precision is focused on bringing practical, localised Precision Ag services to
+      growers across the central Wheatbelt. We combine on-ground experience with modern tools to help
+      you turn variability into better decisions and more confident input use.
+    </p>
+
+    <div class="grid md:grid-cols-2 gap-8 mt-6">
+      <div class="space-y-4 text-sm text-slate-700">
+        <h2 class="text-xl font-semibold">Local, practical and grower-focused</h2>
+        <p>
+          Being based in Merredin means we understand the realities of farming in this region—soil
+          types, seasons, machinery and logistics. We’re not here to drop a set of maps and disappear;
+          we work with you to make sure everything fits your system.
+        </p>
+        <p>
+          Whether it’s a single paddock that never quite performs, or a full-farm strategy you want to
+          build over several seasons, we can help map it out and support the setup.
+        </p>
+      </div>
+
+      <div class="space-y-4 text-sm text-slate-700">
+        <h2 class="text-xl font-semibold">What we care about</h2>
+        <ul class="list-disc list-inside space-y-1.5">
+          <li>Clear, honest communication with growers and agronomists.</li>
+          <li>Maps and systems that work with the gear you already own.</li>
+          <li>Simple reporting that makes sense at the kitchen table.</li>
+          <li>Building long-term value into your paddocks and data.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mt-10 bg-white border rounded-2xl p-5 text-sm text-slate-700">
+      <h2 class="text-lg font-semibold mb-2">Where we are</h2>
+      <p>
+        You’ll find us at:
+        <br />
+        <strong>17 Bates Street, Merredin, WA, Australia, Western Australia</strong>
+      </p>
+      <p class="mt-2">
+        Phone: <strong>+61 411 179 540</strong><br />
+        Email:
+        <a href="mailto:Admin@WheatbeltPrecisionAg.com.au" class="underline">
+          Admin@WheatbeltPrecisionAg.com.au
+        </a>
+      </p>
+    </div>
+  </main>
+
+  <footer class="border-t bg-white">
+    <div class="max-w-6xl mx-auto px-4 py-6 flex flex-col md:flex-row items-center justify-between gap-3 text-sm text-slate-600">
+      <div class="font-semibold text-slate-800">Wheatbelt Ag Precision</div>
+      <div class="text-xs text-center md:text-right">
+        <div>© <span id="year"></span> Wheatbelt Ag Precision. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
